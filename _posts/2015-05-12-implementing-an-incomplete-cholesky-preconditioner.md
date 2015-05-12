@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Implementing an incomplete Cholesky preconditioner"
-date: 2015-05-12
+title: Implementing an incomplete Cholesky preconditioner
+date: {}
 categories: preconditioning Cholesky factorisation
+published: true
 ---
-
 
 Incomplete Cholesky factorisations form efficient preconditioners for solving well-conditioned symmetric positive definite (SPD) linear systems with solvers like the [Conjugate Gradient method](https://en.wikipedia.org/wiki/Conjugate_gradient_method). These preconditioners are fairly robust and provide an alternative to full factorisation which may lead to a reduction in the time required to solve the given linear system of equations. In the following, an efficient incomplete Cholesky factorisation for sparse linear systems is outlined. The method is a left-looking factorisation based on the description given by [Timothy Davis](http://faculty.cse.tamu.edu/davis/welcome.html) in *Direct Methods for Sparse Linear Systems*.
 
@@ -56,7 +56,7 @@ The last three sections are contained within the main loop and will be executed 
 
 
 ### Initialisation ###
-The only vectors that need initialising are `d`, `head`, and `flag`. We set `head` to $$-1$$, `flag` to $$0$$ and `d` to the diagaonl entries of $$\mathbf{A}$$, scaling them as necessary.
+The only vectors that need initialising are `d`, `head`, and `flag`. We set `head` to $$-1$$, `flag` to $$0$$ and `d` to the diagonal entries of $$\mathbf{A}$$, scaling them as necessary.
 
 ~~~fortran
  do j = 1, n
