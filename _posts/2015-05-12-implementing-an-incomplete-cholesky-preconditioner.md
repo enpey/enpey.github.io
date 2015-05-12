@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Implementing an incomplete Cholesky preconditioner
-date: {}
+date: 2015-05-12
 categories: preconditioning Cholesky factorisation
 published: true
 ---

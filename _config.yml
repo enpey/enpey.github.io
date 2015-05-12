@@ -8,19 +8,13 @@ description: > # this means to ignore newlines until "baseurl:"
   A log of some of the things I, at some point, found interesting or
   important enough to write about or record.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "www.nathanpodlich.com" # the base hostname & protocol for your site
 twitter_username: 
 github_username:  enpey
 bitbucket_username: enpey
 
 # Build settings
 markdown: kramdown
-
-# Serving
-detach:  false
-port:	 4000
-host:    debook
-baseurl: ""
 
 # Markdown processors
 kramdown:
